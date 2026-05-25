@@ -115,7 +115,7 @@ body{
 .project{
   margin-top:40px;
   padding:24px;
-  background-color:#1e3a8a;
+  background-color:#1f1f1f;
   border-radius:12px;
   transition:all 0.3s ease;
   color:white;
@@ -124,7 +124,7 @@ body{
 
 .project:hover{
   transform:translateY(-6px);
-  background-color:#1d4ed8;
+  background-color:#2b2b2b;
 }
 
 .project h2{
