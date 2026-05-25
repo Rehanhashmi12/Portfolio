@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root{
-  --accent:#22c55e;
-  --accent2:#00ffd5;
-  --card:rgba(255,255,255,0.05);
-  --text:#e5e7eb;
+  --accent:#9ca3af;
+  --accent2:#d1d5db;
+  --card:rgba(255,255,255,0.04);
+  --text:#f3f4f6;
 }
 
 /* ================= RESET ================= */
