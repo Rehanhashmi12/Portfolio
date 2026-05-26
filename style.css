@@ -294,6 +294,22 @@ body{
   .contact-section{
     padding:30px;
   }
+
+
+  /* FOOD APP IMAGE */
+
+.food-app-image{
+  width:100%;
+  max-width:700px;
+  border-radius:18px;
+  margin-top:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  transition:0.3s ease;
+}
+
+.food-app-image:hover{
+  transform:scale(1.02);
+}
 }
 
 
