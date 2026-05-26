@@ -311,71 +311,107 @@ body{
   transform:scale(1.02);
 }
 
-/* ================= FOODR FLOATING CARD ================= */
+/* ================= AD POPUP ================= */
 
-.foodr-card{
+.ad-popup{
   position:fixed;
-  bottom:25px;
-  right:25px;
-  width:320px;
-  background:#1a1a1a;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+
+  animation:fadePopup 0.4s ease;
+}
+
+.ad-card{
+  width:340px;
+
+  background:#1c1c1c;
+
+  border-radius:24px;
+
+  padding:35px;
+
+  text-align:center;
+
   border:1px solid #333;
-  border-radius:20px;
-  padding:25px;
-  box-shadow:0 10px 35px rgba(0,0,0,0.45);
-  z-index:999;
-  animation:slideUp 0.6s ease;
+
+  box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+  position:relative;
 }
 
-.foodr-card h2{
+.ad-card h1{
   color:white;
-  margin-bottom:12px;
+  margin-bottom:15px;
+  font-size:2.2rem;
 }
 
-.foodr-card p{
-  color:#cbd5e1;
+.ad-card p{
+  color:#d1d5db;
+  margin-bottom:25px;
   line-height:1.6;
-  margin-bottom:18px;
 }
 
-.foodr-btn{
+.ad-btn{
   display:inline-block;
-  padding:12px 22px;
+
+  padding:14px 28px;
+
   background:#444;
+
   color:white;
+
   text-decoration:none;
-  border-radius:12px;
+
+  border-radius:14px;
+
   font-weight:600;
+
   transition:0.3s ease;
 }
 
-.foodr-btn:hover{
+.ad-btn:hover{
   background:#666;
   transform:scale(1.05);
 }
 
+.ad-close{
+  position:absolute;
+
+  top:12px;
+  right:18px;
+
+  color:#999;
+
+  font-size:28px;
+
+  cursor:pointer;
+}
+
+.ad-close:hover{
+  color:white;
+}
+
 /* ANIMATION */
 
-@keyframes slideUp{
+@keyframes fadePopup{
+
   from{
-    transform:translateY(80px);
     opacity:0;
+    transform:scale(0.95);
   }
 
   to{
-    transform:translateY(0);
     opacity:1;
-  }
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-  .foodr-card{
-    width:90%;
-    right:5%;
-    bottom:20px;
+    transform:scale(1);
   }
 
 }
