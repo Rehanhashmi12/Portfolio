@@ -13,22 +13,35 @@
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<!-- FOODR FLOATING CARD -->
+<!-- FOODR AD POPUP -->
 
-<div class="foodr-card">
+<div class="ad-popup" id="adPopup">
 
-  <h2>🍳 foodR</h2>
+  <div class="ad-card">
 
-  <p>
-    Explore breakfast meals, biryani,
-    nearby food places & more.
-  </p>
+    <span class="ad-close" onclick="closeAd()">&times;</span>
 
-  <a href="breakfast-meals.html" class="foodr-btn">
-    Open App
-  </a>
+    <h1>🍳 foodR</h1>
+
+    <p>
+      Fresh Breakfast • Biryani • Nearby Food
+    </p>
+
+    <a href="breakfast-meals.html" class="ad-btn">
+      Explore
+    </a>
+
+  </div>
 
 </div>
+
+<script>
+
+function closeAd(){
+  document.getElementById("adPopup").style.display = "none";
+}
+
+</script>
 <body>
 
   <!-- NAVBAR -->
